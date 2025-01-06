@@ -787,8 +787,8 @@ h6 {
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: var(--accent-color);
+  background-color: var(--contrast-color);
   margin-top: 100px;
   padding: 20px 0;
   position: relative;
@@ -817,7 +817,7 @@ h6 {
   content: "/";
   display: inline-block;
   padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: var(--accent-color)
 }
 
 /*--------------------------------------------------------------
@@ -830,6 +830,9 @@ section,
   padding: 60px 0;
   scroll-margin-top: 100px;
   overflow: clip;
+}
+.service-details{
+  background-image: url(../img/fondo_servs.jpg);
 }
 
 @media (max-width: 1199px) {
@@ -980,6 +983,7 @@ section,
   list-style: none;
   padding: 0;
   font-size: 20px;
+  text-align: justify;
 }
 
 .about .content ul li {
@@ -1034,7 +1038,7 @@ section,
 # Cards Section
 --------------------------------------------------------------*/
 .cards .service-item {
-  background-color: var(--surface-color);
+  background-image: url(../img/fondo_cards.jpg);
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   padding: 80px 20px;
@@ -1055,6 +1059,7 @@ section,
   font-size: 23px;
   margin-bottom: 0;
   text-align: justify;
+  color: var(--background-color)
 }
 
 .cards .service-item:hover {
@@ -1683,16 +1688,19 @@ section,
 .service-details h3 {
   font-size: 23px;
   font-weight: 700;
+  color: var(--accent-color);
 }
 
 .service-details h4 {
   font-size: 25px;
   font-weight: 700;
+  color:var(--accent-color)
 }
 
 .service-details p {
   font-size: 20px;
   text-align: justify;
+  color: var(--background-color);
 }
 
 .service-details p span{
@@ -1713,6 +1721,7 @@ section,
   /* align-items: center; */
   /* font-size: 25px; */
   text-align: justify;
+  color: var(--bs-body-bg);
 }
 
 .service-details ul i {
@@ -1724,7 +1733,7 @@ section,
 
 .service-details ul li span{
   /* font-size: 25px; */
-  color: var(--heading-color);
+  color: var(--accent-color);
   font-weight: 600;
 }
 
@@ -1750,11 +1759,11 @@ section,
 }
 
 details { 
-  background-color: #aa91662e;
+  background-color: var(--default-color);
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 8px;
-  border: 1px solid #aa91662e;
+  border: 1px solid var(--default-color);
   color: #364f6b;
   position: relative;
   
@@ -1794,7 +1803,7 @@ details[open] {
 }
 
 details[open] {
-  background: #aa91662e;
+  background: var(--bs-dark);
 }
 
 details[open] summary {
