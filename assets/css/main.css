@@ -860,7 +860,7 @@ section,
   z-index: 2;
 }
 
-.section-title span {
+.section-title .span-title {
   position: absolute;
   top: 4px;
   color: color-mix(in srgb, var(--heading-color), transparent 95%);
@@ -880,14 +880,14 @@ section,
   font-size: 23px;
 }
 
+.span-p{
+  color: var(--accent-color);
+}
+
 @media (max-width: 575px) {
   .section-title h2 {
     font-size: 28px;
     margin-bottom: 15px;
-  }
-
-  .section-title span {
-    font-size: 38px;
   }
 }
 
@@ -1174,6 +1174,7 @@ section,
   line-height: 24px;
   font-size: 25px;
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .services .service-item:hover {
@@ -1551,6 +1552,8 @@ section,
 --------------------------------------------------------------*/
 .contact p{
   font-size: 25px;
+  text-align: justify;
+  margin: 0 10px;
 }
 
 .contact .info-item {
