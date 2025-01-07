@@ -833,6 +833,7 @@ section,
 }
 .service-details{
   background-image: url(../img/fondo_servs.jpg);
+  background-size: cover;
 }
 
 @media (max-width: 1199px) {
@@ -1044,6 +1045,7 @@ section,
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
   height: 100%;
+  background-size: cover;
 }
 
 .cards .service-item h3{
@@ -1759,12 +1761,11 @@ section,
 }
 
 details { 
-  background-color: var(--default-color);
+  background-color: var(--background-color);
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 8px;
   border: 1px solid var(--default-color);
-  color: #364f6b;
   position: relative;
   
 }
@@ -1781,13 +1782,17 @@ details summary {
   transition: all 0.5s ease-out;
 }
 
-details p {
+details .p-faq {
   padding: 1rem;
   font-size: 1.15rem;
   margin: 0 1rem 1rem 1rem;
-  background: #aa91662e;
   border-left: 2px solid #364f6b;
   text-align: justify;
+  color: var(--default-color)
+}
+
+details .p-faq i {
+  color: var(--accent-color)
 }
 
 details p span{ 
@@ -1803,7 +1808,7 @@ details[open] {
 }
 
 details[open] {
-  background: var(--bs-dark);
+  background: var(--surface-color);
 }
 
 details[open] summary {
@@ -1822,7 +1827,6 @@ details[open] summary::before {
   -webkit-animation: rotate-emoji 0.s ease-in-out both;
           animation: rotate-emoji 0.s ease-in-out both;
           top: 0px;
-
 }
 
 @keyframes rotate-emoji {
