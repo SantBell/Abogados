@@ -1548,6 +1548,7 @@ section,
 
 .service-details .services-img {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .service-details h3 {
